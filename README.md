@@ -86,8 +86,17 @@ Not AI-powered — but your sandwich will believe it is
 
 Works best if you don’t eat the entire sandwich before uploading
 
-# Screenshots (Add at least 3)
+# Screenshots
 <img width="1920" height="1080" alt="Screenshot 2025-08-09 154837" src="https://github.com/user-attachments/assets/2557a894-5594-411d-9c12-5b817f618328" />
+Home Page
+<img width="815" height="1044" alt="Screenshot 2025-08-09 155002" src="https://github.com/user-attachments/assets/cfc7c207-0c52-4976-b267-3ed972f1ae29" />
+After user uploads photo
+<img width="941" height="997" alt="Screenshot 2025-08-09 155053" src="https://github.com/user-attachments/assets/70905422-c8dc-4bf5-a92c-895aba049d25" />
+Final Result showing the best bite
+<img width="868" height="990" alt="Screenshot 2025-08-09 160059" src="https://github.com/user-attachments/assets/9ec018fe-ec75-4d62-8bb8-e584d449a7fe" />
+Random Bite Result
+
+
 
 
 
