@@ -9,9 +9,9 @@ import io
 import imageio
 import random
 
-# -------------------------------
+
 # Streamlit page config / Branding
-# -------------------------------
+
 st.set_page_config(page_title="Sand-Which?", page_icon="🥪", layout="centered")
 
 st.markdown(
@@ -23,9 +23,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# -------------------------------
+
 # Helper functions (vision + scoring)
-# -------------------------------
+
 def load_image(uploaded_file):
     """Load uploaded image in OpenCV BGR format with 3 channels."""
     image = Image.open(uploaded_file).convert("RGB")
@@ -51,7 +51,7 @@ def get_largest_contour_mask(bgr, min_area=5000):
     th = cv2.morphologyEx(th, cv2.MORPH_CLOSE, kernel)
     contours, _ = cv2.findContours(th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     if not contours:
-        return np.ones(gray.shape, dtype=np.uint8) * 255  # fallback
+        return np.ones(gray.shape, dtype=np.uint8) * 255 
     c = max(contours, key=cv2.contourArea)
     if cv2.contourArea(c) < min_area:
         h, w = gray.shape
@@ -218,9 +218,6 @@ def find_best_point_from_heat(heat, mask, min_distance_from_eaten=6):
     y, x = np.unravel_index(np.argmax(combined), combined.shape)
     return (x, y)
 
-# -------------------------------
-# UI helpers (polish)
-# -------------------------------
 def make_pulse_frames(pil_image, center, radius=20, frames=8):
     """Create small pulsing frames highlighting center. Returns list of PIL images."""
     frames_list = []
@@ -254,9 +251,9 @@ def make_zoom_crop(pil_img, center, crop_size=160, scale=2):
     draw.line((crop_size//2, crop_size//2 - 12, crop_size//2, crop_size//2 + 12), fill=(255,255,255,255), width=2)
     return zoomed
 
-# -------------------------------
+
 # Streamlit UI
-# -------------------------------
+
 uploaded = st.file_uploader("Upload sandwich photo (jpg, png) 🍞", type=["jpg", "jpeg", "png"])
 risk_mode = st.checkbox("Risky Bite Mode (less safety)", value=False)
 
@@ -264,7 +261,7 @@ if uploaded:
     bgr = load_image(uploaded)
     h, w, _ = bgr.shape
     original_pil = pil_from_bgr(bgr)
-    st.write("")  # spacing
+    st.write("")
 
     # Show original on top
     st.markdown("**Original**")
@@ -286,7 +283,7 @@ if uploaded:
             # Boost protrusions
             heat = boost_protrusions(mask, heat, erosion_radius=max(7, min(h, w)//20), boost_strength=0.7)
 
-            # Re-normalize
+           
             if heat.max() > 0:
                 heat = heat / heat.max()
 
@@ -298,7 +295,7 @@ if uploaded:
             overlay_pil = overlay_heat_on_image(bgr, heat, best_pt)
             zoom_pil = make_zoom_crop(overlay_pil, best_pt, crop_size=180, scale=2)
 
-            # Try to make pulsing GIF (fallback to static)
+            
             pulse_bytes = None
             try:
                 frames = make_pulse_frames(overlay_pil, best_pt, radius=max(18, min(w,h)//30), frames=8)

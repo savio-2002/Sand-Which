@@ -1,96 +1,111 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# Sand-Which? 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: ChaatGPT
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Manjith M - CUSAT
+- Member 1: Savio Joemon- CUSAT
+- Member 2: Manjith M - CUSAT
 
 ### Project Description
-[2-3 lines about what your project does]
+Sand-Which? is a quirky computer vision app that analyzes your half-eaten sandwich image using OpenCV and smart image processing, then suggests the most satisfying next bite. Because making the wrong choice is a recipe for regret. 🥪
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Choosing the next bite of a sandwich is a high-stakes decision… that absolutely doesn’t need solving. Yet here we are. Why waste time thinking about calories when you can waste time thinking about the next bite?
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We built Sand-Which?, a playful tool that scans your half-eaten sandwich and highlights the optimal next bite. No artificial intelligence, just some image processing, a bit of math, and a lot of overthinking your lunch.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Python
+- Streamlit
+- OpenCV (image processing), NumPy, Pillow
+- GitHub (version control), Pinterest (for sandwich images)
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- None required beyond a device with a web browser and internet connection
+- Optional: A sandwich (for field testing)
+- Camera or phone to take sandwich pictures
 
-### Implementation
+## Implementation
 For Software:
-# Installation
-[commands]
+### Clone the repo  
+git clone https://github.com/tinkerhub/useless_project_temp.git  
+
+### Move into the folder  
+cd useless_project_temp  
+
+### Create a virtual environment (optional but recommended)  
+python -m venv venv  
+
+### Activate the virtual environment  
+### Windows  
+venv\Scripts\activate  
+### macOS/Linux  
+source venv/bin/activate  
+
+# Install dependencies  
+pip install -r requirements.txt
+
 
 # Run
-[commands]
+streamlit run app.py
 
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+Flow:
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+User uploads a photo of a partially eaten sandwich
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+The app processes the image, finds edges, and locates the “next best bite” zone
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+Displays a zoomed-in view of the bite target with a fun UI background
 
-For Hardware:
+Features:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+Dark-themed foreground container for contrast
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+Background image fetched from Pinterest (because why not?)
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+“Risky Bite Mode” for those who like danger in their sandwiches
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+Option to waste more time thinking about bites than calories
 
-![Final](Add photo of final product here)
-*Explain the final build*
+Limitations:
 
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+Not AI-powered — but your sandwich will believe it is
 
-# Additional Demos
-[Add any extra demo materials/links]
+Works best if you don’t eat the entire sandwich before uploading
+
+# Screenshots
+<img width="1920" height="1080" alt="Screenshot 2025-08-09 154837" src="https://github.com/user-attachments/assets/2557a894-5594-411d-9c12-5b817f618328" /><br>
+<p align = "center">Home Page</p>
+<br><img width="815" height="1044" alt="Screenshot 2025-08-09 155002" src="https://github.com/user-attachments/assets/cfc7c207-0c52-4976-b267-3ed972f1ae29" /><br>
+<p align = "center">After user uploads photo</p>
+<br><img width="941" height="997" alt="Screenshot 2025-08-09 155053" src="https://github.com/user-attachments/assets/70905422-c8dc-4bf5-a92c-895aba049d25" /><br>
+<p align = "center">Final Result showing the best bite</p>
+<br><img width="868" height="990" alt="Screenshot 2025-08-09 160059" src="https://github.com/user-attachments/assets/9ec018fe-ec75-4d62-8bb8-e584d449a7fe" /><br>
+<p align = "center">Random Bite Result</p>
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Savio Joemon: Developed the core image processing workflow (bite prediction, highlighting areas).
+                Integrated user options such as “Risky Bite Mode” with unique Streamlit widget keys.
+                Set up installation instructions, documentation, and GitHub project structure.
+
+- Manjith M: Designed the UI and branding for Sand-Which? including color schemes, and layout.
+             Implemented image upload, bite-detection logic, and result display.
+             Handled styling with custom CSS for the foreground container and overall look.
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
