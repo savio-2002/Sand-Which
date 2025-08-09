@@ -35,9 +35,7 @@ For Hardware:
 - Optional: A sandwich (for field testing)
 - Camera or phone to take sandwich pictures
 
-## Implementation
-For Software:
-### Clone the repo  
+## Usage
 ```
 git clone [https://github.com/tinkerhub/Sand-Which.git  ](https://github.com/savio-2002/Sand-Which.git)
 cd Sand-Which  
