@@ -97,31 +97,15 @@ Works best if you don’t eat the entire sandwich before uploading
 <p align = "center">Random Bite Result</p>
 
 
-
-
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Savio Joemon: Developed the core image processing workflow (bite prediction, highlighting areas).
+                Integrated user options such as “Risky Bite Mode” with unique Streamlit widget keys.
+                Set up installation instructions, documentation, and GitHub project structure.
+
+- Manjith M: Designed the UI and branding for Sand-Which? including background images, color schemes, and layout.
+             Implemented image upload, bite-detection logic, and result display.
+             Handled styling with custom CSS for the foreground container and overall look.
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
