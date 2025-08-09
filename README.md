@@ -35,21 +35,21 @@ For Hardware:
 - Optional: A sandwich (for field testing)
 - Camera or phone to take sandwich pictures
 
-### Implementation
+## Implementation
 For Software:
-# Clone the repo  
+### Clone the repo  
 git clone https://github.com/tinkerhub/useless_project_temp.git  
 
-# Move into the folder  
+### Move into the folder  
 cd useless_project_temp  
 
-# Create a virtual environment (optional but recommended)  
+### Create a virtual environment (optional but recommended)  
 python -m venv venv  
 
-# Activate the virtual environment  
-# Windows  
+### Activate the virtual environment  
+### Windows  
 venv\Scripts\activate  
-# macOS/Linux  
+### macOS/Linux  
 source venv/bin/activate  
 
 # Install dependencies  
@@ -102,7 +102,7 @@ Works best if you don’t eat the entire sandwich before uploading
                 Integrated user options such as “Risky Bite Mode” with unique Streamlit widget keys.
                 Set up installation instructions, documentation, and GitHub project structure.
 
-- Manjith M: Designed the UI and branding for Sand-Which? including background images, color schemes, and layout.
+- Manjith M: Designed the UI and branding for Sand-Which? including color schemes, and layout.
              Implemented image upload, bite-detection logic, and result display.
              Handled styling with custom CSS for the foreground container and overall look.
 
