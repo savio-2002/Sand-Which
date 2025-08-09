@@ -9,42 +9,82 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Manjith M - CUSAT
+- Member 1: Savio Joemon- CUSAT
+- Member 2: Manjith M - CUSAT
 
 ### Project Description
-[2-3 lines about what your project does]
+Sand-Which? is a quirky computer vision app that analyzes your half-eaten sandwich image using OpenCV and smart image processing, then suggests the most satisfying next bite. Because making the wrong choice is a recipe for regret. 🥪
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Choosing the next bite of a sandwich is a high-stakes decision… that absolutely doesn’t need solving. Yet here we are. Why waste time thinking about calories when you can waste time thinking about the next bite?
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We built Sand-Which?, a playful tool that scans your half-eaten sandwich and highlights the optimal next bite. No artificial intelligence, just some image processing, a bit of math, and a lot of overthinking your lunch.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Python
+- Streamlit
+- OpenCV (image processing), NumPy, Pillow
+- GitHub (version control), Pinterest (for sandwich images)
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- None required beyond a device with a web browser and internet connection
+- Optional: A sandwich (for field testing)
+- Camera or phone to take sandwich pictures
 
 ### Implementation
 For Software:
-# Installation
-[commands]
+# Clone the repo  
+git clone https://github.com/tinkerhub/useless_project_temp.git  
+
+# Move into the folder  
+cd useless_project_temp  
+
+# Create a virtual environment (optional but recommended)  
+python -m venv venv  
+
+# Activate the virtual environment  
+# Windows  
+venv\Scripts\activate  
+# macOS/Linux  
+source venv/bin/activate  
+
+# Install dependencies  
+pip install -r requirements.txt
+
 
 # Run
-[commands]
+streamlit run app.py
 
 ### Project Documentation
 For Software:
+
+Flow:
+
+User uploads a photo of a partially eaten sandwich
+
+The app processes the image, finds edges, and locates the “next best bite” zone
+
+Displays a zoomed-in view of the bite target with a fun UI background
+
+Features:
+
+Dark-themed foreground container for contrast
+
+Background image fetched from Pinterest (because why not?)
+
+“Risky Bite Mode” for those who like danger in their sandwiches
+
+Option to waste more time thinking about bites than calories
+
+Limitations:
+
+Not AI-powered — but your sandwich will believe it is
+
+Works best if you don’t eat the entire sandwich before uploading
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
@@ -56,18 +96,6 @@ For Software:
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 # Build Photos
 ![Components](Add photo of your components here)
