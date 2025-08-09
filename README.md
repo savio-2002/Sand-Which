@@ -87,14 +87,8 @@ Not AI-powered — but your sandwich will believe it is
 Works best if you don’t eat the entire sandwich before uploading
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2025-08-09 154837" src="https://github.com/user-attachments/assets/2557a894-5594-411d-9c12-5b817f618328" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
 
 
 # Build Photos
