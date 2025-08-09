@@ -16,10 +16,10 @@
 ### Project Description
 Sand-Which? is a quirky computer vision app that analyzes your half-eaten sandwich image using OpenCV and smart image processing, then suggests the most satisfying next bite. Because making the wrong choice is a recipe for regret. 🥪
 
-### The Problem (that doesn't exist)
+### The Problem
 Choosing the next bite of a sandwich is a high-stakes decision… that absolutely doesn’t need solving. Yet here we are. Why waste time thinking about calories when you can waste time thinking about the next bite?
 
-### The Solution (that nobody asked for)
+### The Solution
 We built Sand-Which?, a playful tool that scans your half-eaten sandwich and highlights the optimal next bite. No artificial intelligence, just some image processing, a bit of math, and a lot of overthinking your lunch.
 
 ## Technical Details
@@ -38,26 +38,20 @@ For Hardware:
 ## Implementation
 For Software:
 ### Clone the repo  
-git clone https://github.com/tinkerhub/useless_project_temp.git  
-
-### Move into the folder  
-cd useless_project_temp  
-
-### Create a virtual environment (optional but recommended)  
+```
+git clone [https://github.com/tinkerhub/Sand-Which.git  ](https://github.com/savio-2002/Sand-Which.git)
+cd Sand-Which  
 python -m venv venv  
 
-### Activate the virtual environment  
 ### Windows  
-venv\Scripts\activate  
+venv\Scripts\activate
+
 ### macOS/Linux  
-source venv/bin/activate  
+source venv/bin/activate
 
-# Install dependencies  
 pip install -r requirements.txt
-
-
-# Run
 streamlit run app.py
+```
 
 ### Project Documentation
 For Software:
