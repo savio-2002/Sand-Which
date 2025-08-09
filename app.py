@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 from PIL import Image, ImageDraw
 import numpy as np
